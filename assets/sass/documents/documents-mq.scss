@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1025px) {
+  div.about-us {
+    &__text {
+      width: 100%;
+    }
+  }
+
+  div.documents{
+    &__text {
+      margin-bottom: 6.9rem;
+    }
+    &__block{
+      margin: 0 0 6rem 0;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}

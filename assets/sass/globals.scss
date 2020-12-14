@@ -1,0 +1,364 @@
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  //padding: 0 2rem;
+}
+
+
+.general-height {
+  height: 100%;
+}
+.main-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  //height: 100%;
+}
+.team-background{
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.button-back {
+  padding: 0 0 4.7rem 0;
+  &__wrapper {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-family: 'Mukta', sans-serif;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 1.9rem;
+      color: #464646;
+    }
+    svg {
+      margin-right: 1.4rem;
+    }
+  }
+}
+//animated input
+.label-before {
+  //line-height: 20px;
+  //font-size: 12px;
+  top: -10px;
+  background: #426395;
+  padding: 0 6px;
+  left: 9px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+}
+.field {
+  position: relative;
+  width: 50%;
+  &:first-child {
+    margin-right: 1.7rem;
+  }
+  label::before {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 15px;
+    line-height: 38px;
+    color: #fff;
+    transition: 300ms all;
+
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+  input {
+    width: 100%;
+    line-height: 38px;
+    padding: 0 15px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    opacity: .74;
+    border: 0.7px solid #FFFFFF;
+    color: #fff;
+    &:focus {
+      outline: 0;
+      border-color: #fff;
+    }
+    &:valid + label::before {
+      @extend .label-before;
+      content: attr(data-title);
+    }
+    &:focus + label::before {
+      @extend .label-before;
+      color: #ffffff;
+      background: #426395;
+    }
+  }
+}
+//
+
+//.test{
+//  width: 100%;
+//  height: 30rem;
+//  background-color: red;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  p{
+//    font-size: 10rem;
+//    color: white;
+//  }
+//}
+
+$white: #ffffff;
+$black: #000000;
+$black-two: #363636;
+$silver: #c8c9cd;
+$greyish-brown: #474747;
+$gunmetal: #505d68;
+$gunmetal-two: #424b5a;
+$battleship-grey: #737a87;
+$cobalt: #214099;
+$cloudy-blue: #c2d1d9;
+$pale-grey: #f2f5f7;
+$cool-grey: #999b9f;
+$cool-grey-two: #a1aeb7;
+$white-two: #f6f6f6;
+$white-three: #fafafa;
+$rouge: #c61519;
+
+
+//.breadcrumbs {
+//  padding: 4rem 0 5.9rem 0;
+//  ul{
+//    display: flex;
+//    align-items: center;
+//  }
+//  a{
+//    font-size: 1.4rem;
+//    font-weight: 400;
+//    line-height: 1.5;
+//    text-decoration: none;
+//    span{
+//      margin: 0 .3rem;
+//    }
+//  }
+//  &-back{
+//    color: $cool-grey-two;
+//  }
+//  &-post{
+//    color: $gunmetal-two;
+//  }
+//}
+
+//.title-underline {
+//  position: relative;
+//  margin-bottom: 6.3rem;
+//
+//  &:after {
+//    position: absolute;
+//    content: '';
+//    width: 100%;
+//    height: .1rem;
+//    background-color: $pale-grey;
+//    bottom: -2.1rem;
+//    left: 0;
+//  }
+//
+//  h2 {
+//    display: inline;
+//    position: relative;
+//    font-size: 2.8rem;
+//    font-weight: 700;
+//    line-height: 1.36;
+//    color: $black;
+//
+//    &:before {
+//      position: absolute;
+//      content: '';
+//      width: 100%;
+//      height: .2rem;
+//      background-color: $black;
+//      bottom: -2.4rem;
+//      left: 0;
+//      z-index: 1;
+//    }
+//  }
+//}
+
+
+//.success {
+//  &__wrapper{
+//    display: none;
+//  }
+//  &__backdrop{
+//    width: 100%;
+//    height: 100%;
+//    background-color: rgba(66, 75, 90, 0.5);
+//    position: fixed;
+//    top: 0;
+//    left: 0;
+//    z-index: 1;
+//  }
+//  &__modal-wrapper{
+//    padding: 4rem 2rem;
+//    width: 28.8rem;
+//    height: 19.8rem;
+//    position: fixed;
+//    top: 50%;
+//    left: 50%;
+//    transform: translate(-50%, -50%);
+//    z-index: 5;
+//    background-color: $white;
+//    border-radius: .4rem;
+//    display: flex;
+//    justify-content: center;
+//    flex-direction: column;
+//    align-items: center;
+//    svg{
+//      margin-bottom: 2rem;
+//    }
+//    p{
+//      font-size: 1.8rem;
+//      line-height: 1.48;
+//      font-weight: 400;
+//      color: $greyish-brown;
+//    }
+//  }
+//}
+
+
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $cool-grey;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: $cool-grey;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: $cool-grey;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: $cool-grey;
+}
+
+option {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1366px) {
+  .container {
+    max-width: 98rem;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .container {
+    max-width: 90rem;
+    margin: 0 auto;
+    //padding-left: 2rem;
+    //padding-right: 2rem;
+  }
+
+  .main-background {
+    background-position: center;
+  }
+  .team-background {
+background-size: unset;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    max-width: 73rem;
+    margin: 0 auto;
+
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .container {
+    max-width: 45rem;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+  .button-back {
+    padding: 0 0 3.1rem 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .container {
+    max-width: 29rem;
+    margin: 0 auto;
+  }
+
+  .title-underline {
+    position: relative;
+    margin-bottom: 4.6rem;
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: .1rem;
+      background-color: $pale-grey;
+      bottom: -1.1rem;
+      left: 0;
+    }
+
+    h2 {
+      display: inline;
+      position: relative;
+      font-size: 2.1rem;
+      font-weight: 700;
+      line-height: 1.48;
+      color: $black;
+
+      &:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: .2rem;
+        background-color: $black;
+        bottom: -1.5rem;
+        left: 0;
+        z-index: 1;
+      }
+    }
+  }
+  .breadcrumbs {
+    padding: 2rem 0 2rem 0;
+
+    ul{
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    a{
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.5;
+      text-decoration: none;
+      span{
+        margin: 0 .3rem;
+      }
+    }
+    &-post-list{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 80%;
+    }
+    &-back{
+      color: $cool-grey-two;
+    }
+    &-post{
+      color: $gunmetal-two;
+    }
+  }
+}
+

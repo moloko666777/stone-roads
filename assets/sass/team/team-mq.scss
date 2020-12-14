@@ -1,0 +1,126 @@
+
+@media only screen and (max-width: 1025px) {
+  div.team {
+    max-width: 103rem;
+    padding-top: 57.6rem;
+    margin: 0 auto;
+    &__people-left {
+      margin-bottom: 11rem;
+    }
+    &__people-left-photo {
+      width: 26.7rem;
+      height: 34.4rem;
+      margin-right: 3.3rem;
+    }
+    &__people-left-description {
+      width: 44rem;
+      h3{
+        width: 50%;
+      }
+    }
+    &__people-right {
+      margin-bottom: 11rem;
+      justify-content: flex-end;
+    }
+    &__people-right-photo{
+      width: 26.7rem;
+      height: 34.4rem;
+      margin-left: 3.3rem;
+    }
+    &__people-right-description {
+      width: 44rem;
+      h3{
+        width: 50%;
+        margin-right: 0;
+        margin-left: auto;
+      }
+    }
+  }
+
+}
+@media only screen and (max-width: 767px) {
+  div.team {
+    padding: 27rem 1.7rem 0 1.7rem;
+    margin: 0 auto;
+    &__people-left {
+      margin-bottom: 8rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__people-left-photo {
+      width: 22.1rem;
+      height: 26.8rem;
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+    &__people-left-description {
+      width: 100%;
+      h3{
+        width: 100%;
+        font-size: 2.5rem;
+        line-height: 2.6rem;
+        margin-bottom: 2.5rem;
+      }
+      p{
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+      }
+    }
+    &__people-left-contacts {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      a {
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        margin-bottom: .3rem;
+      }
+    }
+    &__people-right {
+      margin-bottom: 8rem;
+      justify-content: flex-end;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__people-right-photo{
+      width: 22.1rem;
+      height: 26.8rem;
+      margin-left: 0;
+      order: 1;
+      margin-bottom: 2rem;
+    }
+    &__people-right-description {
+      width: 100%;
+      order: 2;
+      h3{
+        font-size: 2.5rem;
+        line-height: 2.6rem;
+        width: 100%;
+        margin-bottom: 2.5rem;
+        text-align: left;
+        svg {
+          right: unset;
+          left: 0;
+          transform: rotate(180deg);
+        }
+      }
+      p{
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+      }
+    }
+    &__people-right-contacts {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      a {
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        margin-bottom: .3rem;
+      }
+    }
+  }
+
+}

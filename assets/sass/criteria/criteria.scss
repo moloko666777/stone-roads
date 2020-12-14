@@ -1,0 +1,57 @@
+.criteria {
+  padding-top: 36.7rem;
+  &__text {
+    margin: 0 auto 11.6rem auto;
+    span {
+      //display: none;
+    }
+  }
+  &__features {
+    display: flex;
+    justify-content: space-between;
+    //margin: 0 -.7rem;
+    max-width: 121rem;
+    margin: 0 auto;
+    padding-bottom: 10.7rem;
+
+  }
+  &__features-block {
+    //width: 30rem;
+    width: 25%;
+    //height: 37.6rem;
+    background: rgba(0, 36, 90, 0.4);
+    //padding: 0 .7rem;
+    margin: 0 .7rem;
+  }
+  &__features-title {
+    padding: 2.4rem 2.5rem;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    color: $white;
+    text-align: center;
+    background: rgba(0, 45, 112, 0.8);
+  }
+  &__features-list {
+    padding: 3rem 1.9rem 3.4rem 3.4rem;
+    ul{
+      li{
+        display: flex;
+        margin-bottom: 1.5rem;
+        svg {
+          margin-right: 1rem;
+        }
+        span {
+          display: block;
+          width: 70%;
+          font-family: 'Mukta', sans-serif;
+          font-weight: 400;
+          font-size: 1.7rem;
+          line-height: 1.8rem;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}

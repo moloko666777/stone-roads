@@ -1,0 +1,107 @@
+@media only screen and (max-width: 1025px) {
+  div.contact-us {
+    &__map-form {
+      width: 100%;
+    }
+
+    &__wrapper {
+      width: 100%;
+      margin: 0 auto 9.7rem;
+      padding: 0 3rem;
+
+      h3 {
+        text-align: center;
+        margin-bottom: 6.8rem;
+      }
+    }
+
+    &__contact {
+      width: 60%;
+
+      a {
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        margin-bottom: 2.9rem;
+
+        span {
+          font-size: 2.4rem;
+          line-height: 2.4rem;
+        }
+      }
+
+    }
+
+    &__address {
+      width: 40%;
+
+      p {
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        margin-bottom: 2.9rem;
+
+        span {
+          font-size: 2.4rem;
+          line-height: 2.4rem;
+        }
+      }
+    }
+  }
+
+  div#map {
+    height: 71.8rem;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  div.contact-us-section{
+    padding-top: 22.8rem;
+  }
+  div.contact-us {
+    flex-direction: column;
+    &-section {
+
+    }
+    &__map-form {
+      padding: 3.3rem 1.6rem 3.1rem 1.6rem;
+    }
+    &__wrapper {
+      margin-bottom: 6rem;
+      h3{
+        font-size: 2.6rem;
+        margin-bottom: 4rem;
+      }
+    }
+    &__contact {
+      width: 100%;
+      a{
+        margin-bottom: 3.6rem;
+        &:last-child{
+          margin-bottom: 3.6rem;
+        }
+      }
+    }
+    &__address {
+      width: 100%;
+    }
+    &__map-form{
+      button{
+        margin: 0 auto;
+      }
+    }
+    &__contact-us-input {
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+  }
+  .field {
+    width: 100%;
+    &:first-child {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+  div#map {
+    height: 79.4rem;
+  }
+}
