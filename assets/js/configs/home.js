@@ -1,19 +1,28 @@
-const hover = document.querySelectorAll('.head__item');
-const baseSrc = []
-hover.forEach((block, index) => {
-    let src = block.querySelector('.head__image').querySelector('img')
-    baseSrc.push(src.getAttribute("src"))
-    block.addEventListener('mouseover', () => {
-        hover.forEach(container => {
-            container.querySelector("img").setAttribute("src", src.getAttribute("src"))
+if (window.screen > 1000){
+    const hover = document.querySelectorAll('.head__item');
+    const baseSrc = []
+    hover.forEach((block, index) => {
+        let src = block.querySelector('.head__image').querySelector('img')
+        baseSrc.push(src.getAttribute("src"))
+        block.addEventListener('mouseover', () => {
+            hover.forEach(container => {
+                container.querySelector("img").setAttribute("src", src.getAttribute("src"))
+            })
         })
-    })
-    block.addEventListener('mouseout', () => {
-        hover.forEach((container, index) => {
-            container.querySelector("img").setAttribute("src", baseSrc[index])
+        block.addEventListener('mouseout', () => {
+            hover.forEach((container, index) => {
+                container.querySelector("img").setAttribute("src", baseSrc[index])
+            })
         })
-    })
-});
+    });
+}
+
+// let hoverBlock = document.querySelector('.head__description');
+// console.log(hoverBlock);
+//
+// if (window.innerHeight < 950){
+//     hoverBlock.classList.add('hide-text');
+// }
 
 let mobileOpenBlock = document.querySelectorAll('.head__button-open');
 let mobileBlock = document.querySelectorAll('.head__description');
@@ -57,9 +66,9 @@ closeMenu.addEventListener('click', function () {
 
 let map;
 
-function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: -34.397, lng: 150.644 },
-        zoom: 8,
-    });
-}
+// function initMap() {
+//     map = new google.maps.Map(document.getElementById("map"), {
+//         center: { lat: -34.397, lng: 150.644 },
+//         zoom: 8,
+//     });
+// }

@@ -1,10 +1,15 @@
 .criteria {
   padding-top: 36.7rem;
-  &__text {
+  &__text-wrapper {
     margin: 0 auto 11.6rem auto;
+  }
+  &__text {
     span {
       //display: none;
     }
+  }
+  &-mobile__features {
+   display: none;
   }
   &__features {
     display: flex;

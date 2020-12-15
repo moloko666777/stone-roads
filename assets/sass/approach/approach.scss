@@ -4,7 +4,22 @@
   }
 }
 .approach {
+  padding-top: 36.7rem;
+  padding-bottom: 4.4rem;
   &__background {
-    padding-bottom: 4.4rem;
+    //padding-bottom: 4.4rem;
+  }
+  &__text-wrapper {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  div.approach {
+    padding: 36.7rem 3rem 4rem 3rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  div.approach {
+    padding: 19.2rem 3rem 4rem 3rem;
   }
 }
